@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'CircularStd', sans-serif;
+}
+
+.hero-banner {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* background-image: url(https://www.monolithai.com/hubfs/Group_39403_min.png); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://www.monolithai.com/hubfs/Group_39403_min.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 120px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #fff; /* Change text color to be visible on the background */
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #fff; /* Change text color to be visible on the background */
+}
+
+.cta-button {
+  font-family: Lato,sans-serif;
+    text-decoration: none;
+    color: rgba(255,255,255,1.0);
+    background: #ff5a5f;
+    padding-top: 16px;
+    padding-right: 40px;
+    padding-bottom: 16px;
+    padding-left: 40px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    border: 1px solid #ff5a5f;
+	transition: all .3s ease-in-out;
+    font-weight: 600;
+	text-align: center;
+}
+
+.cta-button:hover {
+  background: #ff5a5f;
+}
+
+.cta-button-secondary {
+	font-family: Lato,sans-serif;
+    text-decoration: none;
+    background: rgba(255,255,255,0.0);
+    border-radius: 30px;
+    text-transform: uppercase;
+    border: 3px solid #ff5a5f;
+    padding-top: 16px;
+    padding-right: 40px;
+    padding-bottom: 16px;
+    padding-left: 40px;
+    border-radius: 30px;
+	transition: all .3s ease-in-out;
+    font-weight: 600;
+	text-align: center;
+}
+
+.cta-button-secondary:hover {
+  background: #ff5a5f;
+  color: #000;
+}
+
+.btn-group {
+  padding-top: 3.5rem;
+  padding-bottom:6rem;
+}
+
+.marquee {
+	 width: 100%;
+	 overflow: hidden;
+	 white-space: nowrap;
+	 margin-bottom: 3.3rem;
+}
+ .marquee:hover .marquee__item {
+	 animation-play-state: paused;
+}
+ .marquee__seperator {
+	 margin: 0 2rem;
+}
+ .marquee__item {
+	 display: inline-block;
+	 will-change: transform;
+	 animation: marquee 25s linear infinite;
+}
+ @keyframes marquee {
+	 0% {
+		 transform: translateX(0);
+	}
+	 100% {
+		 transform: translateX(-100%);
+	}
+}
+
+.mr-2 {
+	margin-right: 2rem;
+}
+
+ h6 {
+	margin: 15px 0 0 0;
+}  
+
+/* Media Queries */
+
+@media only screen and (min-width: 600px) {
+	
+}
+
+@media only screen and (max-width: 668px) {
+	.btn-group {
+		display: inline-grid;
+	}
+	
+	.mr-2 {
+		margin-bottom: 2rem;
+	}
+	
+	.h1 {
+		font-size: 34px;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	
+	.hero-content {
+	  max-width: 54%;
+	}
+
+	.h1 {
+		font-size: 54px !important;
+	}
+}
+ 
